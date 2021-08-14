@@ -14,7 +14,7 @@
 .hero {
   max-width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.4)),
     url("/images/bg-2.jpg");
   background-position: top;
   background-size: cover;
@@ -102,14 +102,14 @@ nav::after {
   transform: translateY(80%);
 }
 .hero-content h1 {
-  font-size: 2.7em;
+  font-size: 2em;
   color: aquamarine;
 }
 
 /* cheeesiest pizzzaaa designing */
 .hero-content a {
   font-family: "Kaushan Script", cursive;
-  font-size: 4rem;
+  font-size: 3rem;
   color: #fc723b;
   cursor: pointer;
   text-decoration: none;
@@ -125,14 +125,47 @@ nav::after {
   top: 20px;
   left: 30px;
   width: 3px;
-  height: 200px;
+  height: 150px;
 }
 .hero-content::after {
   content: "";
   background-color: #ff4800;
   position: absolute;
-  top: 180px;
+  top: 140px;
   left: 8px;
   height: 3px;
   width: 300px;
+}
+/* Buttons */
+.btn {
+  color: aquamarine;
+  width: 7rem;
+  height: 2.5rem;
+  margin: 2.5rem 1.5rem;
+  border-radius: 0 10px;
+  cursor: pointer;
+  outline: none;
+  font-size: 1.2em;
+  text-align: center;
+}
+.orange {
+  border: none;
+  background: #ff4800;
+  color: white;
+}
+.orange:hover {
+  background: transparent;
+  border: 2px solid white;
+  color: aquamarine;
+  transform: scaleX(110%);
+}
+.trans {
+  background: transparent;
+  border: 2px solid white;
+}
+.trans:hover {
+  background: #ff4800;
+  border: none;
+  color: white;
+  transform: scaleX(110%);
 }
