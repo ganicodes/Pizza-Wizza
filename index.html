@@ -4,36 +4,98 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pizza Hub</title>
+    <title>Pizza Wizza🍕</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./images/pizza.ico" type="image/x-icon" />
   </head>
   <body>
-    <div class="hero">
-      <nav>
-        <h3 id="logo">Pizza Hub</h3>
-        <div class="right-nav">
-          <div class="upper-right-nav">
-            <img src="/images/phone.svg" id="phone-icon" alt="" />
-            <h2>+1 0123456789</h2>
+    <div class="container">
+      <div class="hero">
+        <nav>
+          <div class="nav-left">
+            <img src="./images/pizza-logo-1.png" id="logo-image" alt="logo" />
+            <h1 id="logo-title">Pizza Wizza</h1>
           </div>
-          <div class="lower-right-nav">
-            <a href="#" class="nav-menu">Home</a>
-            <a href="#" class="nav-menu">About</a>
-            <a href="#" class="nav-menu">Pizza</a>
-            <a href="#" class="nav-menu">Delivery</a>
-            <a href="#" class="nav-menu">Contact Us</a>
+          <div class="nav-right">
+            <a href="index.html" class="nav-links active">Home</a>
+            <a href="#" class="nav-links">About</a>
+            <a href="#" class="nav-links">Menu</a>
+            <a href="#" class="nav-links">Press</a>
+            <a href="#" class="nav-links">Contact</a>
+            <img src="./images/shopping-basket.png" id="basket" alt="" />
+            <a href="#" id="sign-in" class="nav-links btn-dark">Sign in</a>
+            <img src="./images/menu-icon.png" id="menu-icon" alt="" />
+          </div>
+        </nav>
+        <div class="hero-content">
+          <div class="hero-content-left">
+            <h1 id="content-text">Are You Hungry?</h1>
+            <h1>Wanna have some cheesy pizza?</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="content-btn">
+              <a href="" class="nav-links btn-dark">Buy Now</a>
+              <a href="" class="nav-links btn-dark">See Menu</a>
+            </div>
+          </div>
+          <div class="hero-content-right">
+            <img src="./images/pizza-7.png" alt="" />
           </div>
         </div>
-        <button id="btn-green">Track Your Order</button>
-      </nav>
-      <div class="hero-content">
-        <h1>
-          Get the <a href="#">Cheeesiest Pizzzzaaa</a> <br />Delivered to you
-          within 20 minutes
-        </h1>
-        <button class="btn orange">Order Now</button>
-        <button class="btn trans">See Menu</button>
       </div>
     </div>
+
+    <div class="container small">
+      <h1>Our Delivery Partners</h1>
+      <div class="delivery-partners-row">
+        <div class="delivery-partners">
+          <img
+            class="delivery-partners-logo"
+            src="./images/zomato.png"
+            alt=""
+          />
+          <h3>Zomato</h3>
+        </div>
+        <div class="delivery-partners">
+          <img
+            src="./images/swiggy.png"
+            class="delivery-partners-logo"
+            alt=""
+          />
+          <h3>Swiggy</h3>
+        </div>
+        <div class="delivery-partners">
+          <img src="./images/uber.png" class="delivery-partners-logo" alt="" />
+          <h3>Uber Eats</h3>
+        </div>
+        <div class="delivery-partners">
+          <img
+            src="./images/foodpanda.png"
+            class="delivery-partners-logo"
+            alt=""
+          />
+          <h3>Food Panda</h3>
+        </div>
+      </div>
+    </div>
+    <div class="container light">
+      <div class="hero about-container">
+        <div class="about-left">
+          <img src="./images/pizza-box.png" alt="pizza" />
+        </div>
+        <div class="about-right">
+          <h1>The <span>Cheesiest Pizzas</span> in the town.</h1>
+          <h2>Lorem ipsum dolor, sit amet consectetur .</h2>
+          <h3>Lorem ipsum dolor.</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            ratione nobis voluptatem expedita quae quidem laborum?
+          </p>
+          <a href="#" class="btn-orange">Explore More</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>
