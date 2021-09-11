@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Wizza🍕</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./images/pizza.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="hero">
+        <nav>
+          <div class="nav-left">
+            <img
+              src="./images/pizza-logo-1.png"
+              class="logo-image"
+              alt="logo"
+            />
+            <h1 class="logo-title">Pizza Wizza</h1>
+          </div>
+          <div class="nav-right">
+            <a href="index.html" class="nav-links active">Home</a>
+            <img src="./images/shopping-basket.png" id="basket" alt="" />
+            <img src="./images/menu-icon.png" id="menu-icon" alt="" />
+          </div>
+        </nav>
+        <div class="form-box">
+          <div class="button-box">
+            <div id="btn" onclick="btn()"></div>
+            <button
+              type="button"
+              onclick="login()"
+              id="login-btn"
+              class="toggle-btn"
+            >
+              Login
+            </button>
+            <button
+              type="button"
+              onclick="register()"
+              id="register-btn"
+              class="toggle-btn"
+            >
+              Register
+            </button>
+          </div>
+          <div class="social-icons">
+            <img src="./images/fb.png" alt="" />
+            <img src="./images/tw.png" alt="" />
+            <img src="./images/gp.png" alt="" />
+          </div>
+          <form id="login-form" class="input-group">
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your Email"
+              class="input-field"
+              id=""
+              required
+            />
+            <input
+              type="password"
+              name="password"
+              placeholder="Enter your Password"
+              class="input-field"
+              id=""
+              required
+            />
+            <input type="checkbox" class="check-box" name="" id="" /><span
+              >Remember Password</span
+            >
+            <button type="submit" class="submit-btn">Login</button>
+          </form>
+          <form id="registeration-form" class="input-group">
+            <input
+              type="name"
+              name="name"
+              placeholder="Enter your name"
+              class="input-field"
+              id=""
+              required
+            />
+
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your Email"
+              class="input-field"
+              id=""
+              required
+            />
+            <input
+              type="tel"
+              maxlength="10"
+              name="number"
+              placeholder="Enter your phone number"
+              class="input-field"
+              id=""
+              required
+            />
+            <input
+              type="password"
+              name="password"
+              placeholder="Enter your Password"
+              class="input-field"
+              id=""
+              required
+            />
+            <input type="checkbox" class="check-box" name="" id="" /><span
+              >I agree to the terms & conditions*</span
+            >
+            <button type="submit" class="submit-btn">Register</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

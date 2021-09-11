@@ -13,23 +13,42 @@
       <div class="hero">
         <nav>
           <div class="nav-left">
-            <img src="./images/pizza-logo-1.png" id="logo-image" alt="logo" />
-            <h1 id="logo-title">Pizza Wizza</h1>
+            <img
+              src="./images/pizza-logo-1.png"
+              class="logo-image"
+              alt="logo"
+            />
+            <h1 class="logo-title">Pizza Wizza</h1>
           </div>
           <div class="nav-right">
-            <a href="index.html" class="nav-links active">Home</a>
-            <a href="#" class="nav-links">About</a>
-            <a href="#" class="nav-links">Menu</a>
-            <a href="#" class="nav-links">Press</a>
-            <a href="#" class="nav-links">Contact</a>
-            <img src="./images/shopping-basket.png" id="basket" alt="" />
-            <a href="#" id="sign-in" class="nav-links btn-dark">Sign in</a>
-            <img src="./images/menu-icon.png" id="menu-icon" alt="" />
+            <ul>
+              <li>
+                <a href="index.html" class="nav-links active">Home</a>
+              </li>
+              <li>
+                <a href="#about" class="nav-links">About</a>
+              </li>
+              <li>
+                <a href="#" class="nav-links">Menu</a>
+              </li>
+              <li>
+                <a href="#" class="nav-links">Contact</a>
+              </li>
+              <li>
+                <img src="./images/shopping-basket.png" id="basket" alt="" />
+              </li>
+              <li>
+                <a href="signin.html" id="sign-in" class="nav-links btn-dark"
+                  >Sign in</a
+                >
+              </li>
+            </ul>
           </div>
+          <img src="./images/menu-icon.png" id="menu-icon" alt="" />
         </nav>
         <div class="hero-content">
           <div class="hero-content-left">
-            <h1 id="content-text">Are You Hungry?</h1>
+            <h1 class="primary-title" id="content-text">Are You Hungry?</h1>
             <h1>Wanna have some cheesy pizza?</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <div class="content-btn">
@@ -44,6 +63,19 @@
       </div>
     </div>
 
+    <div id="about" class="container light">
+      <div class="hero about-container">
+        <div class="about-left">
+          <img src="./images/pizza-box-1.png" alt="pizza" />
+        </div>
+        <div class="about-right">
+          <h1>The <span>Cheesiest Pizzas</span> in the town.</h1>
+          <h2>Lorem ipsum dolor, sit amet consectetur .</h2>
+          <h3>Lorem ipsum dolor.</h3>
+          <a href="#" class="btn-orange">Explore More</a>
+        </div>
+      </div>
+    </div>
     <div class="container small">
       <h1>Our Delivery Partners</h1>
       <div class="delivery-partners-row">
@@ -77,24 +109,75 @@
         </div>
       </div>
     </div>
-    <div class="container light">
-      <div class="hero about-container">
-        <div class="about-left">
-          <img src="./images/pizza-box.png" alt="pizza" />
+    <div class="container">
+      <div class="hero popular-items">
+        <div class="popular-food-title">
+          <div class="div">
+            <h1 class="primary-title">Our Popular Pizzas</h1>
+            <p>The best of the best, choosen by the best.</p>
+          </div>
+          <div class="navigation-arrow">
+            <div class="navigation-btn">&larr;</div>
+            <div class="navigation-btn">&rarr;</div>
+          </div>
         </div>
-        <div class="about-right">
-          <h1>The <span>Cheesiest Pizzas</span> in the town.</h1>
-          <h2>Lorem ipsum dolor, sit amet consectetur .</h2>
-          <h3>Lorem ipsum dolor.</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-            ratione nobis voluptatem expedita quae quidem laborum?
-          </p>
-          <a href="#" class="btn-orange">Explore More</a>
+        <div class="popular-food-images">
+          <div class="popular-food-card">
+            <img src="./images/pizza-icon-1.png" alt="" />
+            <img id="rating" src="./images/rating.png" alt="" />
+            <h3>Fresh Pan Pizza</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <button id="btn-secondary" class="btn-secondary">
+              Add to Cart
+            </button>
+          </div>
+          <div class="popular-food-card">
+            <img src="./images/pizza-icon-2.png" alt="" />
+            <img id="rating" src="./images/rating.png" alt="" />
+            <h3>Veg Filled Pizza</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <button id="btn-secondary" class="btn-secondary">
+              Add to Cart
+            </button>
+          </div>
+          <div class="popular-food-card">
+            <img src="./images/pizza-icon-3.png" alt="" />
+            <img id="rating" src="./images/rating.png" alt="" />
+            <h3>Cheese Burst</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <button id="btn-secondary" class="btn-secondary">
+              Add to Cart
+            </button>
+          </div>
+          <div class="popular-food-card">
+            <img src="./images/pizza-icon-4.png" alt="" />
+            <img id="rating" src="./images/rating.png" alt="" />
+            <h3>Chicken Pizza</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <button id="btn-secondary" class="btn-secondary">
+              Add to Cart
+            </button>
+          </div>
         </div>
       </div>
     </div>
-
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <div class="footer-left">
+          <img class="logo-image" src="./images/pizza-logo-1.png" alt="" />
+          <span>© 2021 Pizza Wizza🍕, Inc</span>
+        </div>
+        <div class="footer-middle">
+          <span>Shivaji Nagar, Nanded</span>
+          <span>abdulgani.work@gmail.com</span>
+        </div>
+        <div class="footer-right social-icons">
+          <img src="./images/fb.png" alt="" />
+          <img src="./images/tw.png" alt="" />
+          <img src="./images/gp.png" alt="" />
+        </div>
+      </div>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./main.js"></script>
   </body>
