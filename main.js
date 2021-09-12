@@ -12,3 +12,8 @@ function login() {
   registerButton.style.left = "450px";
   toggleButton.style.left = "0";
 }
+var menuIcon = document.getElementById("menu-icon");
+var navLinks = document.getElementsByClassName("nav-right")[0];
+menuIcon.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+});

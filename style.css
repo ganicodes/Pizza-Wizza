@@ -499,10 +499,28 @@ p {
   }
 }
 
-@media only screen and (max-width: 785px) {
-  .nav-links:not(.btn-dark),
-  #basket {
+@media only screen and (max-width: 810px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-left {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .nav-right {
     display: none;
+    width: 100%;
+  }
+  .nav-right ul {
+    flex-direction: column;
+  }
+  .nav-right ul li {
+    text-align: center;
+    margin: 0;
+  }
+  .nav-right.show {
+    display: flex;
   }
   #menu-icon {
     display: block;
@@ -528,9 +546,6 @@ p {
   }
 }
 @media only screen and (max-width: 650px) {
-  #sign-in {
-    display: none;
-  }
   .hero-content {
     flex-direction: column;
     align-items: center;
