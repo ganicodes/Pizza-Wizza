@@ -92,6 +92,7 @@ p {
 }
 #menu-icon {
   display: none;
+  cursor: pointer;
 }
 .logo-image {
   height: 50px;
@@ -512,12 +513,15 @@ p {
     display: none;
     width: 100%;
   }
-  .nav-right ul {
-    flex-direction: column;
-  }
+
   .nav-right ul li {
     text-align: center;
     margin: 0;
+  }
+
+  .nav-right ul li a,
+  #basket {
+    margin-right: 8px;
   }
   .nav-right.show {
     display: flex;
@@ -546,6 +550,9 @@ p {
   }
 }
 @media only screen and (max-width: 650px) {
+  .nav-right ul {
+    flex-direction: column;
+  }
   .hero-content {
     flex-direction: column;
     align-items: center;
